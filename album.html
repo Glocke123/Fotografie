@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Album — Isabel</title>
+  <meta name="description" content="Photography album by Isabel.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Isabel</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Index</a>
+      <a href="info.html">Info</a>
+      <a href="mailto:your@email.com">Email</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="album-heading">
+      <h1 id="album-title"></h1>
+      <p id="album-meta"></p>
+      <p id="album-description"></p>
+    </section>
+
+    <section class="image-sequence" id="image-sequence" aria-label="Album images"></section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">×</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+    <img id="lightbox-image" src="" alt="">
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+  </div>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

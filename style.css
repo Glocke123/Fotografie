@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+}
+
+body {
+  margin: 0;
+  padding: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 52px;
+}
+
+.site-name {
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 18px;
+  row-gap: 48px;
+  align-items: start;
+}
+
+.album-card {
+  display: block;
+  justify-self: center;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.album-thumb-button,
+.album-caption {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.album-thumb-button {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.album-thumb {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 62vh;
+  max-height: 540px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.album-caption {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.album-caption span + span {
+  color: var(--muted);
+}
+
+.album-caption:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 58px 72px;
+}
+
+.carousel.is-open {
+  display: flex;
+}
+
+.carousel-figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel-figure img {
+  display: block;
+  max-width: min(100%, 1050px);
+  max-height: calc(100vh - 140px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-figure figcaption,
+.carousel-counter {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.carousel-close,
+.carousel-prev,
+.carousel-next {
+  position: fixed;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 1;
+  padding: 10px;
+}
+
+.carousel-close {
+  top: 13px;
+  right: 14px;
+  font-size: 26px;
+}
+
+.carousel-prev,
+.carousel-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+}
+
+.carousel-prev {
+  left: 18px;
+}
+
+.carousel-next {
+  right: 18px;
+}
+
+.carousel-counter {
+  position: fixed;
+  left: 18px;
+  bottom: 15px;
+}
+
+.info-page {
+  max-width: 520px;
+}
+
+.info-page p {
+  margin: 0 0 16px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 14px;
+  }
+
+  .site-header {
+    margin-bottom: 36px;
+  }
+
+  .album-grid {
+    grid-template-columns: 1fr;
+    row-gap: 34px;
+  }
+
+  .album-card,
+  .album-thumb-button {
+    width: 100%;
+  }
+
+  .album-thumb {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .carousel {
+    padding: 48px 38px;
+  }
+
+  .carousel-figure img {
+    max-height: calc(100vh - 120px);
+  }
+
+  .carousel-prev {
+    left: 2px;
+  }
+
+  .carousel-next {
+    right: 2px;
+  }
+}

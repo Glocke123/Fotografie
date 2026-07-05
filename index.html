@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isabel — Photography</title>
+  <meta name="description" content="Photography portfolio of Isabel.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Isabel</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Work</a>
+      <a href="info.html">Info &amp; Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="album-grid" id="album-grid" aria-label="Albums"></section>
+  </main>
+
+  <div class="carousel" id="carousel" aria-hidden="true" role="dialog" aria-label="Image carousel">
+    <button class="carousel-close" id="carousel-close" aria-label="Close">×</button>
+    <button class="carousel-prev" id="carousel-prev" aria-label="Previous image">‹</button>
+    <figure class="carousel-figure">
+      <img id="carousel-image" src="" alt="">
+      <figcaption id="carousel-caption"></figcaption>
+    </figure>
+    <button class="carousel-next" id="carousel-next" aria-label="Next image">›</button>
+    <div class="carousel-counter" id="carousel-counter"></div>
+  </div>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
