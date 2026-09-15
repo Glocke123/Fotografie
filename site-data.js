@@ -4,14 +4,21 @@
 const ALBUMS = [
   {
     slug: "marbles",
-    title: "Loosing Our Marbles",
+    title: "Losing Our Marbles",
     meta: "2024–2025",
     description: "",
     cover: "images/marbles/01.jpg",
     images: [
       "images/marbles/01.jpg",
       "images/marbles/02.jpg",
-      "images/marbles/03.jpg"
+      "images/marbles/03.jpg",
+      "images/marbles/04.jpg".
+      "images/marbles/05.jpg",
+      "images/marbles/06.jpg",
+      "images/marbles/07.jpg"
+    
+    
+    
     
     ]
   },
@@ -44,8 +51,8 @@ const ALBUMS = [
     
     ]
   }, 
-  {
-    slug: "arsenal_champions",
+ {
+    slug: "arsenal",
     title: "We won the league",
     meta: "2025/2026",
     description: "",
@@ -74,18 +81,18 @@ const ALBUMS = [
     ]
   },
   {
-    slug: "driving_past",
+    slug: "Driving_past",
     title: "Driving // Past",
     meta: "2025",
     description: "driving down a mountain // looking into the past",
     cover: "images/driving_past/01.jpg",
     images: [
-      "images/driving_past/01.jpg"
+      "images/driving_past/01.jpg",
 
     ]
   },
-  {
-    slug: "liebe",
+    {
+    slug: "Liebe",
     title: "Flitterfest",
     meta: "ongoing",
     description: "",
