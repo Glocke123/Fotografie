@@ -12,7 +12,7 @@ const ALBUMS = [
       "images/marbles/01.jpg",
       "images/marbles/02.jpg",
       "images/marbles/03.jpg",
-      "images/marbles/04.jpg".
+      "images/marbles/04.jpg",
       "images/marbles/05.jpg",
       "images/marbles/06.jpg",
       "images/marbles/07.jpg"
