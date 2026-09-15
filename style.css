@@ -64,50 +64,64 @@ button {
 }
 
 .album-card {
-  display: block;
-  justify-self: center;
-  width: fit-content;
-  max-width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.album-thumb-button,
-.album-caption {
+.album-thumb-button {
   border: 0;
   padding: 0;
   background: transparent;
   cursor: pointer;
   text-align: left;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
 }
 
-.album-thumb-button {
-  display: block;
-  width: fit-content;
+.album-figure {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 100%;
+}
+
+.album-figure.is-landscape {
+  width: 100%;
 }
 
 .album-thumb {
   display: block;
   width: auto;
-  max-width: 100%;
   height: 62vh;
   max-height: 540px;
+  max-width: 100%;
   object-fit: contain;
-  object-position: center;
+}
+
+.album-figure.is-landscape .album-thumb {
+  width: 100%;
+  height: auto;
+  max-height: none;
 }
 
 .album-caption {
   display: block;
   width: 100%;
-  margin-top: 7px;
+  margin-top: 6px;
   font-size: 11px;
   line-height: 1.25;
+  text-align: left;
 }
 
 .album-caption span + span {
   color: var(--muted);
 }
 
-.album-caption:hover {
+.album-thumb-button:hover .album-caption {
   text-decoration: underline;
 }
 
@@ -212,12 +226,18 @@ button {
     row-gap: 34px;
   }
 
-  .album-card,
-  .album-thumb-button {
+  .album-card {
+    justify-content: flex-start;
+  }
+
+  .album-thumb-button,
+  .album-figure,
+  .album-figure.is-landscape {
     width: 100%;
   }
 
-  .album-thumb {
+  .album-thumb,
+  .album-figure.is-landscape .album-thumb {
     width: 100%;
     height: auto;
     max-height: none;

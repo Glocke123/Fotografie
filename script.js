@@ -13,33 +13,42 @@
       button.type = "button";
       button.setAttribute("aria-label", `Open ${album.title}`);
 
+      const figure = document.createElement("span");
+      figure.className = "album-figure";
+
       const img = document.createElement("img");
       img.className = "album-thumb";
       img.src = album.cover;
       img.alt = "";
       img.loading = "lazy";
 
-      button.append(img);
+      img.addEventListener("load", () => {
+        const isLandscape = img.naturalWidth >= img.naturalHeight;
+        figure.classList.toggle("is-landscape", isLandscape);
+        figure.classList.toggle("is-portrait", !isLandscape);
+      });
+
+      const caption = document.createElement("span");
+      caption.className = "album-caption";
+      caption.innerHTML = `<span>${escapeHTML(album.title)}</span><br><span>${escapeHTML(album.meta || "")}</span>`;
+
+      figure.append(img, caption);
+      button.append(figure);
       button.addEventListener("click", () => openCarousel(album, 0));
 
-      const caption = document.createElement("button");
-      caption.className = "album-caption";
-      caption.type = "button";
-      caption.setAttribute("aria-label", `Open ${album.title}`);
-      caption.innerHTML = `<span>${escapeHTML(album.title)}</span><br><span>${escapeHTML(album.meta || "")}</span>`;
-      caption.addEventListener("click", () => openCarousel(album, 0));
-
-      card.append(button, caption);
+      card.append(button);
       albumGrid.appendChild(card);
+
     });
   }
+
 
   function escapeHTML(value) {
     return String(value)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
+      .replace(/\"/g, "&quot;")
       .replace(/'/g, "&#039;");
   }
 
