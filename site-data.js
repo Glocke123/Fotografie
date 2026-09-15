@@ -44,8 +44,8 @@ const ALBUMS = [
     
     ]
   }, 
- {
-    slug: "Arsenal",
+  {
+    slug: "arsenal_champions",
     title: "We won the league",
     meta: "2025/2026",
     description: "",
@@ -57,7 +57,7 @@ const ALBUMS = [
       "images/arsenal_champions/04.jpg",
       "images/arsenal_champions/05.jpg",
       "images/arsenal_champions/06.jpg",
-      "images/arsenal_champions/07.jpg",
+      "images/arsenal_champions/07.jpg"
     
     ]
   },
@@ -74,18 +74,18 @@ const ALBUMS = [
     ]
   },
   {
-    slug: "Driving_past",
+    slug: "driving_past",
     title: "Driving // Past",
     meta: "2025",
     description: "driving down a mountain // looking into the past",
     cover: "images/driving_past/01.jpg",
     images: [
-      "images/driving_past/01.jpg",
+      "images/driving_past/01.jpg"
 
     ]
   },
-    {
-    slug: "Liebe",
+  {
+    slug: "liebe",
     title: "Flitterfest",
     meta: "ongoing",
     description: "",
