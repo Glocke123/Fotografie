@@ -4,7 +4,7 @@
 const ALBUMS = [
   {
     slug: "marbles",
-    title: "The Marble Game",
+    title: "Loosing Our Marbles",
     meta: "2024–2025",
     description: "",
     cover: "images/marbles/01.jpg",
@@ -22,7 +22,9 @@ const ALBUMS = [
     description: "",
     cover: "images/girlhood/01.jpg",
     images: [
-      "images/girlhood/01.jpg"
+      "images/girlhood/01.jpg",
+      "images/girlhood/02.jpg",
+      "images/girlhood/03.jpg"
     ]
   }, 
   {
@@ -41,5 +43,62 @@ const ALBUMS = [
       "images/waking_life/07.jpg",
     
     ]
-  }
+  }, 
+ {
+    slug: "Arsenal",
+    title: "We won the league",
+    meta: "2025/2026",
+    description: "",
+    cover: "images/arsenal_champions/01.jpg",
+    images: [
+      "images/arsenal_champions/01.jpg",
+      "images/arsenal_champions/02.jpg",
+      "images/arsenal_champions/03.jpg",
+      "images/arsenal_champions/04.jpg",
+      "images/arsenal_champions/05.jpg",
+      "images/arsenal_champions/06.jpg",
+      "images/arsenal_champions/07.jpg",
+    
+    ]
+  },
+  {
+    slug: "cafe_europa",
+    title: "Café Europa",
+    meta: "2025",
+    description: "",
+    cover: "images/cafe_europa/01.jpg",
+    images: [
+      "images/cafe_europa/01.jpg",
+      "images/cafe_europa/02.jpg"
+
+    ]
+  },
+  {
+    slug: "Driving_past",
+    title: "Driving // Past",
+    meta: "2025",
+    description: "driving down a mountain // looking into the past",
+    cover: "images/driving_past/01.jpg",
+    images: [
+      "images/driving_past/01.jpg",
+
+    ]
+  },
+    {
+    slug: "Liebe",
+    title: "Flitterfest",
+    meta: "ongoing",
+    description: "",
+    cover: "images/Flitterfest/01.jpg",
+    images: [
+      "images/Flitterfest/01.jpg",
+      "images/Flitterfest/02.jpg",
+      "images/Flitterfest/03.jpg",
+      "images/Flitterfest/04.jpg",
+      "images/Flitterfest/05.jpg",
+      "images/Flitterfest/06.jpg",
+      "images/Flitterfest/07.jpg"
+
+    ]
+  }, 
 ];
