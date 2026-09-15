@@ -17,9 +17,6 @@ const ALBUMS = [
       "images/marbles/06.jpg",
       "images/marbles/07.jpg"
     
-    
-    
-    
     ]
   },
   {
