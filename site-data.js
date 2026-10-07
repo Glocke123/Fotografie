@@ -144,7 +144,7 @@ const ALBUMS = [
   {
     slug: "Kino",
     title: "Cinématique",
-    meta: "ongoing",
+    meta: "2024",
     description: "",
     cover: "images/Kino/01.jpg",
     images: [
