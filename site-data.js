@@ -101,8 +101,55 @@ const ALBUMS = [
       "images/Flitterfest/04.jpg",
       "images/Flitterfest/05.jpg",
       "images/Flitterfest/06.jpg",
-      "images/Flitterfest/07.jpg"
+      "images/Flitterfest/07.jpg",
+      "images/Flitterfest/08.jpg",
+      "images/Flitterfest/09.jpg",
+      "images/Flitterfest/10.jpg",
+    ]
+  }, 
 
+  {
+    slug: "England",
+    title: "This is England",
+    meta: "ongoing",
+    description: "",
+    cover: "images/England/01.jpg",
+    images: [
+      "images/England/01.jpg",
+      "images/England/02.jpg",
+      "images/England/03.jpg",
+      "images/England/04.jpg",
+      "images/England/05.jpg",
+ 
+    ]
+  }, 
+    {
+    slug: "London",
+    title: "Zone to Zone",
+    meta: "ongoing",
+    description: "",
+    cover: "images/London/01.jpg",
+    images: [
+      "images/London/01.jpg",
+      "images/London/02.jpg",
+      "images/London/03.jpg",
+      "images/London/04.jpg",
+      "images/London/05.jpg",
+      "images/London/06.jpg",
+      "images/London/07.jpg",
+    
+    ]
+  }, 
+
+  {
+    slug: "Kino",
+    title: "Cinématique",
+    meta: "ongoing",
+    description: "",
+    cover: "images/Kino/01.jpg",
+    images: [
+      "images/Kino/01.jpg"
+ 
     ]
   }, 
 ];
